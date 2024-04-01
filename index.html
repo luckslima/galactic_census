@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censo Galático</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input,
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        ul,
+        #searchResults {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li,
+        #searchResults div {
+            background-color: #f0f0f0;
+            margin-top: 10px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .planet-info ul {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Censo Galático</h1>
+
+        <input type="text" id="searchInput" placeholder="Digite o nome de um planeta">
+        <button onclick="searchPlanets()">Buscar Planeta</button>
+
+        <button onclick="showPlanets()">Exibir Planetas</button>
+
+        <ul id="list"></ul>
+        <div id="searchResults"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
